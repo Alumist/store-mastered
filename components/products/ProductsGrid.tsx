@@ -3,7 +3,7 @@ import { Product } from '@prisma/client';
 import Link from 'next/link';
 import { Card, CardContent } from '../ui/card';
 import Image from 'next/image';
-import { FaHeart } from 'react-icons/fa';
+// import { FaHeart } from 'react-icons/fa';
 import FavoriteToggleButton from './FavoriteToggleButton';
 
 function ProductsGrid({ products }: { products: Product[] }) {
@@ -39,7 +39,7 @@ function ProductsGrid({ products }: { products: Product[] }) {
               </Card>
             </Link>
             <div className='absolute top-7 right-7 z-5 '>
-              <FavoriteToggleButton productId={prodcutId} />
+              <FavoriteToggleButton  />
             </div>
           </article>
         );
